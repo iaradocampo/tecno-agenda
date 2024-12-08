@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", serif;
+    background-image: url("https://i.ibb.co/Z8nsRkk/fondo.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/********** HOME **********/ 
+/* NAVBAR */
+.navbar {
+    background-color: #162859;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand::before {
+    content: "●";
+    color: #3ABEFF;
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.bi-list{
+    color: white;
+    font-size: 30px;
+}
+
+.nav-link {
+    color: white;
+    font-size: 1rem;
+    margin-right: 20px;
+}
+
+.nav-link:hover {
+    color: #3ABEFF;
+}
+
+.form-control {
+    border-radius: 20px;
+    padding-right: 40px;
+}
+
+.form-select {
+    background: none;
+    border: none;
+    color: #fff;
+    max-width: 300px;
+}
+
+.form-select:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.opcionesUbicacion, .opciones {
+    color: #000;
+}
+
+.search-wrapper {
+    position: relative;
+    width: 250px;
+}
+
+.search-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    color: #6c757d;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.avatar-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #FFAB73;
+    font-weight: bold;
+    color: #9C541A;
+}
+
+/* CAROUSEL */
+.carousel {
+    max-height: 700px;
+    overflow: hidden;
+    margin-top: calc(62px);
+}
+
+.carousel img {
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* CARDS EVENTOS */
+.evento-imagen {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+}
+
+.btn-brand {
+    background-color: #162859;
+    color: white;
+}
+
+.btn-brand:hover {
+    background-color:#162859;
+    color: white;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #02172d;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-linea {
+    height: 4px;
+    background-color: #291a9e;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 0px;
+}
+
+.contact-form h5 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-control {
+    background-color: #3a1e1e;
+    border: none;
+    color: #0032b0;
+}
+
+.contact-form .form-control::placeholder {
+    color: #000000;
+}
+
+.contact-form .form-control:focus {
+    background-color: #f7f7f7;
+    color: #030303;
+    outline: none;
+    box-shadow: none;
+}
+
+.contact-form button {
+    background-color: #064469;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ad1457;
+    color: #000000;
+}
+
+.contact-form .form-control {
+    background-color: #ffffff;
+    border: none;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.creadoras {
+    margin-top: 40px;
+}
+
+.creadoras a {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.creadoras a:hover {
+    color: #ad1457;
+}
+
+/********** LOGIN **********/
+.text-danger {
+    font-size: 0.875em;
+}
+
+/********** ANIMACION **********/
+
+.animate-from-left {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.animate-from-right {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideInFromRight 1s ease-out forwards;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
